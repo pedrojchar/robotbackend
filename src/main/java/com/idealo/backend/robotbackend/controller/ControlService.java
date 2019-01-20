@@ -15,7 +15,7 @@ import com.idealo.backend.robotbackend.logic.Utilities;
 @RestController
 public class ControlService {
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = {"http://localhost:4200", "https://robotbackend.herokuapp.com/"})
 	@PostMapping(value = {"/robotbackend", "/robotBackend"}, produces="application/json")
 	public Object robotBackend(@RequestBody String script) {
 		Utilities util = new Utilities();
